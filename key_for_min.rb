@@ -9,4 +9,4 @@ def key_for_min_value(name_hash)
   end
 end
 
-p key_for_min_value(ikea)
+p key_for_min_value(ikea).class
