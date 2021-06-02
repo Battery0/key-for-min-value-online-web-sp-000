@@ -4,22 +4,15 @@
 ikea = {:chair => 25, :table => 85, :mattress => 450}
 
 def key_for_min_value(name_hash)
-  lowest_key =
-  lowest_value =
-  
+  lowest_key = nil
+  lowest_value = nil
   
   name_hash.each do |key, value|
-    if 
-      key
-    else
-      nil
+    if lowest_value == nil || v < lowest_value
+      lowest_value = v
+      lowest_key = k
     end
   end
 end
 
 p key_for_min_value(ikea)
-
-
-    if lowest_value == nil || v < lowest_value
-      lowest_value = v
-      lowest_key = k
